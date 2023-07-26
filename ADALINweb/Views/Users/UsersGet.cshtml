@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+@model IEnumerable<ADALINweb.Domain.Entity.Users>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UsersGet</title>
+</head>
+<body>
+    @foreach (var car in Model)
+    {
+        <p>@car.Id</p>
+        <p>@car.Login</p>
+        <p>@car.Password</p>
+        <p>@car.FName</p>
+        <p>@car.SName</p>
+    }
+</body>
+</html>
